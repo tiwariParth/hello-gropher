@@ -2,17 +2,19 @@ package main
 
 import "fmt"
 
-func main(){
-	var age = 10
-	fmt.Println("User's age", age)
+func main() {
+    var age = 10
+    fmt.Println("User's age:", age)
 
-	if (age < 18 && age <= 10) {
-		fmt.Println("User is child ")
-	} else if (age > 12 && age < 18){
-		fmt.Println("User is teenager")
-	} else if (age > 18 && age < 50 ) {
-		fmt.Println("User is adult")
-	} else {
-		fmt.Println("User is senior")
-	}
+    if age <= 12 {
+        fmt.Println("User is a child.")
+    } else if age >= 13 && age <= 19 {
+        fmt.Println("User is a teenager.")
+    } else if age >= 20 && age <= 64 { 
+        fmt.Println("User is an adult.")
+    } else {
+        fmt.Println("User is a senior.")
+    }
 }
+
+
